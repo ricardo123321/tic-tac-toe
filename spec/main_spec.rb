@@ -26,15 +26,13 @@ describe Tictactoe do
   end
 end
 
-describe Player do
-  let(:beg) { Player.new('mike') }
-  describe 'initialize' do
-    it 'confirms new players game' do
-      expect(beg.name).to eql('mike')
-    end
-
-    it 'confirms new players game' do
-      expect(beg.move).to eql([])
-    end
+describe '#initialize' do
+  it 'confirms new players game' do
+    player = Player.new('mike', 'X')
+    expect(player.instance_variable_get(:@name)).to eq('mike')
+  end
+  it 'confirms new players game' do
+    player = Player.new('mike', 'X')
+    expect(player.instance_variable_get(:@move)).to eq('X')
   end
 end
