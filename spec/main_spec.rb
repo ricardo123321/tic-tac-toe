@@ -30,11 +30,11 @@ describe Player do
   let(:beg) { Player.new('mike') }
   describe 'initialize' do
     it 'confirms new players game' do
-      expect( beg.name ).to eql('mike')
+      expect(beg.name).to eql('mike')
     end
 
     it 'confirms new players game' do
-      expect( beg.move ).to eql([])
+      expect(beg.move).to eql([])
     end
   end
 end
