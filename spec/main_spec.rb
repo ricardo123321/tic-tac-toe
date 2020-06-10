@@ -37,5 +37,4 @@ describe Player do
       expect( beg.move ).to eql([])
     end
   end
-
 end
