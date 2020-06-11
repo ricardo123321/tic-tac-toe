@@ -11,5 +11,4 @@ describe Player do
         expect(player.instance_variable_get(:@move)).to eq('X')
       end
     end
-  end
-  
+end
