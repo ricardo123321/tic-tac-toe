@@ -12,8 +12,16 @@ describe Tictactoe do
       expect(gam.win1).to be(false)
     end
 
+    it 'confirms win1 to be true' do
+      expect(gam.win2).to be(false)
+    end
+
     it 'confirms win2 to be false' do
       expect(gam.win2).to be(false)
+    end
+    
+    it 'confirms win2 to be true' do
+      expect(gam.win1).to be(false)
     end
 
     it 'confirms answer to be empty' do
