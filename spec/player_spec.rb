@@ -12,6 +12,15 @@ describe Player do
       player = Player.new('mike', 'X')
       expect(player.instance_variable_get(:@move)).to eq('X')
     end
+
+    it 'confirms the possible game with empty player`s name' do
+      player = Player.new(' ', 'X')
+      expect(player.instance_variable_get(:@name)).to eq(' ')
+    end
+
+    it 'confirms the possible game with the same player`s name' do
+      player = Player.new(' ', ' ')
+      expect(@player1.instance_variable_get(:@name)==@player2.instance_variable_get(:@name)).to eq(true)
+    end
   end
 end
-

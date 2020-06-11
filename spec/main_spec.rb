@@ -19,7 +19,7 @@ describe Tictactoe do
     it 'confirms win2 to be false' do
       expect(gam.win2).to be(false)
     end
-    
+
     it 'confirms win2 to be true' do
       expect(gam.win1).to be(false)
     end
@@ -40,6 +40,10 @@ describe Tictactoe do
 
     it 'confirms that the number of answers cannot be more than 9 and less than 0' do
       expect(gam.answer.to_i > 9 && gam.answer.to_i < 0).to eql(false)
+    end
+
+    it 'returned false if winner combinations happens' do
+      expect(gam.draw).to be(false)
     end
   end
 end
