@@ -1,4 +1,5 @@
 require './lib/player.rb'
+require './lib/logic.rb'
 
 describe Player do
   describe '#initialize' do
