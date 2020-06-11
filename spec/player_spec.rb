@@ -19,8 +19,8 @@ describe Player do
     end
 
     it 'confirms the possible game with the same player`s name' do
-      player = Player.new(' ', ' ')
-      expect(@player1.instance_variable_get(:@name)==@player2.instance_variable_get(:@name)).to eq(true)
+      player = Player.new('pok', 'pok')
+      expect(@player1.instance_variable_get(:@name) == @player2.instance_variable_get(:@name)).to eq(true)
     end
   end
 end

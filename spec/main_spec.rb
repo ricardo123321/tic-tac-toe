@@ -24,7 +24,7 @@ describe Tictactoe do
     it 'confirms win2 to be false' do
       expect(gam.win2).to be(false)
     end
-    
+
     it 'confirms win2 to be true' do
       gam.instance_variable_set(:@player2, p2)
       gam.instance_variable_set(:@player1, p3)
@@ -47,7 +47,6 @@ describe Tictactoe do
       gam.check
       expect(gam.draw).to be(true)
     end
-
   end
 
   describe 'check' do
