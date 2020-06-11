@@ -24,6 +24,17 @@ describe Tictactoe do
       expect(gam.draw).to be(false)
     end
   end
+
+  describe 'check' do
+    it 'checks the limit of the number of game turns not more than 9' do
+        expect(subject.turn<=9).to eql(true)
+    end
+
+    it 'confirms that the number of answers cannot be more than 9 and less than 0' do
+      expect(gam.answer.to_i>9 && gam.answer.to_i <0).to eql(false)
+    end
+  end
+
 end
 
 describe Player do
