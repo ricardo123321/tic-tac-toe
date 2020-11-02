@@ -10,6 +10,7 @@
 - Ruby programming language, in accordance with the following principles:
     - OOP (Object Oriented Principles)
     - SRP (Single Responsibility Principle)
+    - RSpec
 
 
 ## GAME PLAY
@@ -54,6 +55,9 @@ To get a local copy up and running follow these simple example steps:
 
     Close the Terminal window to close or exit once you finish a game. Repe
 
+### To test
+    To start testing from the console, call: rspec spec\main_spec.rb
+
 
 ## Authors
 
@@ -64,6 +68,11 @@ To get a local copy up and running follow these simple example steps:
 👤 Paul Omondi
 
 - Github: [@paulo-techie](https://github.com/paulo-techie)
+
+👤 Oksana Petrova
+
+- GitHub:[@github/Laguna1](https://github.com/Laguna1)
+- Linkedin:[linkedin/OksanaPetrova](https://www.linkedin.com/in/oksana-petrova-005bb0145/)
 
 
 ## 🤝 Contributing
